@@ -88,5 +88,11 @@
     "title": "this is a test",
     "content": "This is a test message, if you can see this message, you are connected to CAAS (Campfire Adelaide Annoucements Service).",
     "timestamp": "2026-02-10T12:00:00"
+  },
+  {
+    "id": 16,
+    "title": "test 2",
+    "content": "This message is to test the ANS.",
+    "timestamp": "2026-02-26T20:28:30"
   }
 ]
