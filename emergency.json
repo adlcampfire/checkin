@@ -1,0 +1,42 @@
+[
+  {
+    "active": false,
+    "message": "🚨 There is a fire, please evacuate now."
+  },
+  {
+    "active": false,
+    "message": "Food has been delayed due to some traffic or other incidents nearby."
+  },
+  {
+    "active": false,
+    "message": "The power is out, please stay calm and wait for further instructions."
+  },
+  {
+    "active": false,
+    "message": "There is a gas leak, please evacuate immediately and do not use any electrical devices."
+  },
+  {
+    "active": false,
+    "message": "There is a medical emergency, please stay clear of the area and allow emergency responders to do their work."
+  },
+  {
+    "active": false,
+    "message": "There is a security threat, please stay indoors and lock all doors and windows."
+  },
+  {
+    "active": false,
+    "message": "There is a severe weather warning, please seek shelter immediately and stay away from windows."
+  },
+  {
+    "active": false,
+    "message": "There is a chemical spill, please evacuate the area and avoid contact with any substances."
+  },
+  {
+    "active": false,
+    "message": "There is an active shooter situation, please find a safe place to hide and call emergency services if possible."
+  },
+  {
+    "active": true,
+    "message": "Welcome to Campfire Adelaide, please make your teams base and get ready for the day ahead. We will be making announcements throughout the day, so please stay tuned for any updates or changes to the schedule. Our Welcome Ceremony will begin at 10:30am, so please make sure to be there on time. We hope you have a great time at Campfire Adelaide and we can't wait to see what you create!"
+  }
+]

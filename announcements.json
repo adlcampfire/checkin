@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Lunch",
+    "content": "Reminder that lunch is not at 12pm but is at 1pm.",
+    "timestamp": "2026-02-28T11:00:00"
+  },
+  {
+    "id": 2,
+    "title": "Dinner meetup",
+    "content": "Please come to the meeting room so we can decide on what to get for dinner. We are choosing between certain pizza from Dominos",
+    "timetstamp": "2026-02-28T16:00:00"
+  },
+  {
+    "id": 3,
+    "title": "Check-in form #1",
+    "content": "Please complete the Check-in form #1 now. If you complete this form you will get some free merchandise from Jane Street. One person from each team needs to fill it out. https://cfadelaide.fillout.com/checkin1.",
+    "timestamp": "2026-02-28T16:30:00"
+  },
+  {
+    "id": 4,
+    "title": "Dinner",
+    "content": "Dinner is ready, we have Dominos plus drinks.",
+    "timestamp": "2026-02-28T17:00:00"
+  },
+  {
+    "id": 5,
+    "title": "Karaoke time!",
+    "content": "We're getting ready for karaoke now! Please meet in Room A if you want to attend, otherwise continue working on your project :)",
+    "timetstamp": "2026-02-28T18:00:00"
+  },
+  {
+    "id": 6,
+    "title": "Winding down",
+    "content": "Begin to wind down, to allow others wanting to, to sleep otherwise please be quieter and work together. This will be the last annoucement for the day, unless there is a safety annoucement.",
+    "timestamp": "2026-02-28:21:00:00"
+  }
+]
