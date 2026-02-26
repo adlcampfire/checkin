@@ -82,5 +82,11 @@
     "title": "Projects are now DUE",
     "content": "As of 2pm, this message serves as the notice that projects are now due and that the submission portal is closed.",
     "timetstamp": "2026-03-01T14:00:00"
+  },
+  {
+    "id": 15,
+    "title": "this is a test",
+    "content": "This is a test message, if you can see this message, you are connected to CAAS (Campfire Adelaide Annoucements Service).",
+    "timestamp": "2026-02-10T12:00:00"
   }
 ]
