@@ -87,3 +87,73 @@ async function checkEmergency() {
 // Check every second
 setInterval(checkEmergency, 1000);
 checkEmergency();
+
+function displayAnnouncements(announcements) {
+    const now = new Date();
+    announcementsContainer.innerHTML = "";
+
+    const visibleAnnouncements = announcements.filter(item => {
+        const releaseTime = new Date(item.timestamp);
+        return now >= releaseTime;
+    });
+
+    // Sort newest first
+    visibleAnnouncements.sort(
+        (a, b) => new Date(b.timestamp) - new Date(a.timestamp)
+    );
+
+    if (visibleAnnouncements.length === 0) {
+        announcementsContainer.innerHTML = "<p>No announcements yet.</p>";
+        updateFavicon(false);
+        return;
+    }
+
+    // Get last seen timestamp
+    const lastSeen = localStorage.getItem("lastSeenAnnouncement");
+
+    const newestTimestamp = visibleAnnouncements[0].timestamp;
+
+    // If there is a newer announcement than what user saw
+    if (!lastSeen || new Date(newestTimestamp) > new Date(lastSeen)) {
+        updateFavicon(true);
+    } else {
+        updateFavicon(false);
+    }
+
+    visibleAnnouncements.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "announcement";
+        card.innerHTML = `
+            <h2>${item.title}</h2>
+            <p>${item.content}</p>
+            <small>${new Date(item.timestamp).toLocaleString()}</small>
+        `;
+        announcementsContainer.appendChild(card);
+    });
+}
+
+function updateFavicon(hasUnread) {
+    const favicon = document.getElementById("favicon");
+
+    if (hasUnread) {
+        favicon.href = "favicon-alert.ico";
+    } else {
+        favicon.href = "favicon.ico";
+    }
+}
+
+function markAsRead(latestTimestamp) {
+    localStorage.setItem("lastSeenAnnouncement", latestTimestamp);
+    updateFavicon(false);
+}
+
+document.addEventListener("click", () => {
+    const announcements = document.querySelectorAll(".announcement");
+    if (announcements.length > 0) {
+        const latestTime = announcements[0]
+            .querySelector("small")
+            .textContent;
+        localStorage.setItem("lastSeenAnnouncement", new Date().toISOString());
+        updateFavicon(false);
+    }
+});

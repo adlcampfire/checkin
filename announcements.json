@@ -7,32 +7,80 @@
   },
   {
     "id": 2,
+    "title": "Campfire Portal",
+    "content": "Campfire Portal will be starting in 10 minutes in Room A, use this event as a time to connect with other Australian events.",
+    "timestamp": "2026-02-28T15:20:00"
+  },
+  {
+    "id": 3,
     "title": "Dinner meetup",
     "content": "Please come to the meeting room so we can decide on what to get for dinner. We are choosing between certain pizza from Dominos",
     "timetstamp": "2026-02-28T16:00:00"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Check-in form #1",
-    "content": "Please complete the Check-in form #1 now. If you complete this form you will get some free merchandise from Jane Street. One person from each team needs to fill it out. https://cfadelaide.fillout.com/checkin1.",
+    "content": "Please complete the Check-in form #1 now. If you complete this form you will get dinner! One person from each team needs to fill it out. https://cfadelaide.fillout.com/checkin1. The password is pixel-rocket-lime.",
     "timestamp": "2026-02-28T16:30:00"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Dinner",
     "content": "Dinner is ready, we have Dominos plus drinks.",
     "timestamp": "2026-02-28T17:00:00"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Karaoke time!",
     "content": "We're getting ready for karaoke now! Please meet in Room A if you want to attend, otherwise continue working on your project :)",
     "timetstamp": "2026-02-28T18:00:00"
   },
   {
-    "id": 6,
+    "id": 7,
+    "title": "Check-in form #2",
+    "content": "Please complete the Check-in form #2 now. If you complete this form you will get some free merchandise from Jane Street. One person from each team needs to fill it out. https://cfadelaide.fillout.com/checkin2. The password is velvet-mango-orbit.",
+    "timetstamp": "2026-02-28T19:00:00"
+  },
+  {
+    "id": 8,
     "title": "Winding down",
     "content": "Begin to wind down, to allow others wanting to, to sleep otherwise please be quieter and work together. This will be the last annoucement for the day, unless there is a safety annoucement.",
-    "timestamp": "2026-02-28:21:00:00"
+    "timestamp": "2026-02-28T21:00:00"
+  },
+  {
+    "id": 9,
+    "title": "Morning annoucements.",
+    "content": "Hope breakfast was good! Projects will be due in 4 hours at 2pm. Demos will begin then as well, so it's a good idea to begin packing up your team base like your sleeping bag.",
+    "timestamp": "2026-03-01T10:00:00"
+  },
+  {
+    "id": 10,
+    "title": "Check-in form #3",
+    "content": "Please complete the Check-in form #3 now. One person from each team needs to fill it out. https://cfadelaide.fillout.com/checkin3. The password is undercity-daydream-campfire.",
+    "timestamp": "2026-03-01T10:30:00"
+    },
+  {
+    "id": 11,
+    "title": "Need help submitting?",
+    "content": "Are you needing some help with submitting your project? Come to Room A at 12pm for some guidance in the 'Project Submission Masterclass!'.",
+    "timetstamp": "2026-03-01T11:30:00"
+    },
+  {
+    "id": 12,
+    "title": "Lunch",
+    "content": "Lunch is ready, please come to the kitchen (Room B) and collect your food!",
+    "timetstamp": "2026-03-01T13:00:00"
+    },
+  {
+    "id": 13,
+    "title": "Projects are due ASAP!",
+    "content": "This is your last reminder, projects are due at 2pm which is in 30 minutes!",
+    "timetstamp": "2026-03-01T13:30:00"
+  },
+  {
+    "id": 14,
+    "title": "Projects are now DUE",
+    "content": "As of 2pm, this message serves as the notice that projects are now due and that the submission portal is closed.",
+    "timetstamp": "2026-03-01T14:00:00"
   }
 ]
