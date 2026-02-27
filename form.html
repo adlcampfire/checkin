@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Check-In Links</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    margin: 0;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.tile {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tile.locked .content {
+    filter: blur(8px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.tile.locked::after {
+    content: "🔒 Locked";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #b91c1c;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+.countdown {
+    margin: 0.8rem 0;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+button {
+    background: #38bdf8;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+</style>
+</head>
+<body>
+
+<h1>Hackathon Check-In</h1>
+
+<div class="grid" id="checkinGrid"></div>
+
+<script>
+const checkins = [
+    {
+        title: "Check in #1",
+        unlockTime: "2026-02-28T16:30:00+10:30",
+        link: "https://cfadelaide.fillout.com/checkin1",
+        password: "pixel-rocket-lime"
+    },
+    {
+        title: "Check in #2",
+        unlockTime: "2026-02-28T19:00:00+10:30",
+        link: "https://cfadelaide.fillout.com/checkin2",
+        password: "velvet-mango-orbit"
+    },
+    {
+        title: "Check in #3",
+        unlockTime: "2026-03-01T10:30:00+10:30",
+        link: "https://cfadelaide.fillout.com/checkin3",
+        password: "undercity-daydream-campfire"
+    }
+];
+
+const grid = document.getElementById("checkinGrid");
+
+function createTiles() {
+    grid.innerHTML = "";
+
+    checkins.forEach(item => {
+        const tile = document.createElement("div");
+        tile.className = "tile locked";
+
+        tile.innerHTML = `
+            <h2>${item.title}</h2>
+            <div class="countdown" id="countdown-${item.title.replace(/\s/g,'')}"></div>
+            <div class="content">
+                <p><strong>Password:</strong> ${item.password}</p>
+                <a href="${item.link}" target="_blank">
+                    <button>Open Check-In Form</button>
+                </a>
+            </div>
+        `;
+
+        grid.appendChild(tile);
+    });
+}
+
+function updateTiles() {
+    const now = new Date();
+
+    document.querySelectorAll(".tile").forEach((tile, index) => {
+        const item = checkins[index];
+        const unlock = new Date(item.unlockTime);
+        const countdownEl = tile.querySelector(".countdown");
+
+        if (now >= unlock) {
+            tile.classList.remove("locked");
+            countdownEl.textContent = "Unlocked";
+        } else {
+            const diff = unlock - now;
+
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff / (1000 * 60)) % 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+
+            countdownEl.textContent =
+                `Unlocks in ${hours}h ${minutes}m ${seconds}s`;
+        }
+    });
+}
+
+createTiles();
+updateTiles();
+setInterval(updateTiles, 1000);
+</script>
+
+</body>
+</html>

@@ -20,7 +20,7 @@
   {
     "id": 4,
     "title": "Check-in form #1",
-    "content": "Please complete the Check-in form #1 now. If you complete this form you will get dinner! One person from each team needs to fill it out. https://cfadelaide.fillout.com/checkin1. The password is pixel-rocket-lime.",
+    "content": "Please complete the Check-in form #1 now. If you complete this form you will get dinner! One person from each team needs to fill it out. Visit the Check in page to start.",
     "timestamp": "2026-02-28T16:30:00"
   },
   {
@@ -38,7 +38,7 @@
   {
     "id": 7,
     "title": "Check-in form #2",
-    "content": "Please complete the Check-in form #2 now. If you complete this form you will get some free merchandise from Jane Street. One person from each team needs to fill it out. https://cfadelaide.fillout.com/checkin2. The password is velvet-mango-orbit.",
+    "content": "Please complete the Check-in form #2 now. If you complete this form you will get some free merchandise from Jane Street. One person from each team needs to fill it out. Visit the Check in page to start.",
     "timetstamp": "2026-02-28T19:00:00"
   },
   {
@@ -56,7 +56,7 @@
   {
     "id": 10,
     "title": "Check-in form #3",
-    "content": "Please complete the Check-in form #3 now. One person from each team needs to fill it out. https://cfadelaide.fillout.com/checkin3. The password is undercity-daydream-campfire.",
+    "content": "Please complete the Check-in form #3 now. One person from each team needs to fill it out. Visit the Check in page to start.",
     "timestamp": "2026-03-01T10:30:00"
     },
   {
@@ -91,8 +91,8 @@
   },
   {
     "id": 16,
-    "title": "test 2",
-    "content": "This message is to test the ANS.",
+    "title": "Check in page",
+    "content": "Visit adlcampfire.github.io/checkin/form to do check in forms when the annoucement is made via this system or the intercom.",
     "timestamp": "2026-02-26T20:28:30"
   }
 ]
