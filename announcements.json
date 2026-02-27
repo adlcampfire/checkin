@@ -94,5 +94,11 @@
     "title": "Check in page",
     "content": "Visit adlcampfire.github.io/checkin/form to do check in forms when the annoucement is made via this system or the intercom.",
     "timestamp": "2026-02-26T20:28:30"
+  },
+  {
+    "id": 17,
+    "title": "Workshops",
+    "content": "These links go to two different workshops. One is about platformers/RPGs. (Overdrive - https://overdrive.campfire.hackclub.com/). The other is about art and making drawings for a game (Storyboard - https://storyboard.campfire.hackclub.com/).",
+    "timestamp": "2026-02-26T20:28:30"
   }
 ]
